@@ -14,7 +14,10 @@ The requirements are listed as follows:
 6. wandb==0.13.9
 7. mujoco_py (mujoco 210, conda install -c conda-forge glew, pip install patchelf)
 8. imageio==2.3.0
+9. numpy==1.21.6
+10. tqdm
 
+Additionally, `MuJoCo` is required to be installed. Our experiments use the version of `mujoco210`
 ## Training & Evaluation
 To reproduce the results, please run,
 ```shell
