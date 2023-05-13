@@ -37,8 +37,8 @@ def get_args():
 
     # WandB
     parser.add_argument('--with-wandb', default=False, action='store_true', help='Enables Weights and Biases')
-    parser.add_argument('--wandb-entity', default='kcl_coopai', type=str, help='WandB username (entity).')
-    parser.add_argument('--wandb-project', default='FactoredRD_new', type=str, help='WandB "Project"')
+    parser.add_argument('--wandb-entity', default='', type=str, help='WandB username (entity).')
+    parser.add_argument('--wandb-project', default='', type=str, help='WandB "Project"')
     parser.add_argument('--wandb-group', default=None, type=str, help='WandB "Group". Name of the env by default.')
     parser.add_argument('--wandb-job_type', default='train', type=str, help='WandB job type')
     parser.add_argument('--wandb-tags', default=[], type=str, nargs='*', help='Tags can help finding experiments')
